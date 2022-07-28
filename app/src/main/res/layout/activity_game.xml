@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".whitepower.Game"
+    android:padding="8dp"
+    android:background="@drawable/background_main">
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Azure Prism Game"
+        android:gravity="center"
+        android:textSize="32dp"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/oleoscript"
+        android:textColor="#FFF"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Match pairs to find treasure with Azure Prism! \nTap on restart button to refresh your progress."
+        android:gravity="center"
+        android:textSize="14dp"
+        android:textColor="#D8D8D8"
+        android:fontFamily="@font/chakrapetch"
+
+        app:layout_constraintTop_toBottomOf="@id/titleView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/gamepleyWrap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/titleView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/restartButton">
+
+        <LinearLayout
+            android:id="@+id/firstRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/oneOne"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:background="@drawable/salad"
+
+                android:layout_margin="16dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/oneTwo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:background="@drawable/salad"
+
+                android:layout_margin="16dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/oneThree"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:background="@drawable/salad"
+
+                android:layout_margin="16dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@+id/firstRow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/twoOne"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:background="@drawable/salad"
+
+                android:layout_margin="16dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/twoTwo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:background="@drawable/salad"
+
+                android:layout_margin="16dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/twoThree"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:background="@drawable/salad"
+
+                android:layout_margin="16dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/thirdRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@+id/secondRow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/threeOne"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:background="@drawable/salad"
+
+                android:layout_margin="16dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/threeTwo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:background="@drawable/salad"
+
+                android:layout_margin="16dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+
+        android:text="restart"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
