@@ -21,13 +21,16 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="32">
         <activity
-            android:name=".whitepower.Game"
-            android:exported="false" />>
+            android:name=".white.Achievments"
+            android:exported="false" />
+        <activity
+            android:name=".white.Game"
+            android:exported="false" />
         <activity
             android:name=".blackpower.Web"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="true"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".blackpower.Filter"
             android:exported="false" />

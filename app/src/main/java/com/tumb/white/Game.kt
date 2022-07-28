@@ -1,5 +1,6 @@
-package com.tumb.whitepower
+package com.tumb.white
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.tumb.R
@@ -61,6 +62,10 @@ class Game : AppCompatActivity() {
 
         restartButton.setOnClickListener {
             recreate()
+        }
+
+        achivementsButton.setOnClickListener {
+            startActivity(Intent(this@Game, Achievments::class.java))
         }
 
     }

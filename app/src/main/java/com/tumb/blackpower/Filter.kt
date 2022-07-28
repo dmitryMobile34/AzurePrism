@@ -8,7 +8,7 @@ import com.orhanobut.hawk.Hawk
 import com.tumb.R
 import com.tumb.blackpower.CNST.C1
 import com.tumb.blackpower.CNST.D1
-import com.tumb.whitepower.Game
+import com.tumb.white.Game
 import kotlinx.android.synthetic.main.activity_filter.*
 import kotlinx.coroutines.*
 import java.net.HttpURLConnection

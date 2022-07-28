@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".white.Achievments"
+    android:padding="8dp"
+    android:background="#FFF">
+
+    <TextView
+        android:id="@+id/acTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="16dp"
+
+        android:text="Achievements"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:fontFamily="@font/oleoscript"
+        android:textColor="#C37136"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/acOne"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+
+        android:layout_margin="8dp"
+
+        app:layout_constraintTop_toBottomOf="@id/acTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:src="@drawable/salad"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+
+            android:text="First launch"
+            android:textSize="20dp"
+            android:fontFamily="@font/oleoscript"
+            android:textColor="#C37136"
+
+            app:layout_constraintStart_toEndOf="@+id/icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/acTwo"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+
+        android:layout_margin="8dp"
+
+        app:layout_constraintTop_toBottomOf="@id/acOne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/iconTwo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:src="@drawable/salad"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+
+            android:text="Win one game"
+            android:textSize="20dp"
+            android:fontFamily="@font/oleoscript"
+            android:textColor="@color/grey_font"
+
+            app:layout_constraintStart_toEndOf="@+id/iconTwo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/acThree"
+    android:layout_width="300dp"
+    android:layout_height="40dp"
+
+    android:layout_margin="8dp"
+
+    app:layout_constraintTop_toBottomOf="@id/acTwo"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+
+    <ImageView
+        android:id="@+id/iconThree"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:src="@drawable/salad"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+
+        android:text="Win five times in a row"
+        android:textSize="20dp"
+        android:fontFamily="@font/oleoscript"
+        android:textColor="@color/grey_font"
+
+        app:layout_constraintStart_toEndOf="@+id/iconThree"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/acFour"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+
+        android:layout_margin="8dp"
+
+        app:layout_constraintTop_toBottomOf="@id/acThree"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/iconFour"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:src="@drawable/salad"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+
+            android:text="Complete 90 levels in total"
+            android:textSize="20dp"
+            android:fontFamily="@font/oleoscript"
+            android:textColor="@color/grey_font"
+
+            app:layout_constraintStart_toEndOf="@+id/iconFour"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/acFive"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+
+        android:layout_margin="8dp"
+
+        app:layout_constraintTop_toBottomOf="@id/acFour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/iconFive"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:src="@drawable/salad"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+
+            android:text="Spend 50 hours hunting"
+            android:textSize="20dp"
+            android:fontFamily="@font/oleoscript"
+            android:textColor="@color/grey_font"
+
+            app:layout_constraintStart_toEndOf="@+id/iconFive"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+
+        android:text="Back"
+        android:backgroundTint="#C37136"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".whitepower.Game"
+    tools:context=".white.Game"
     android:padding="8dp"
     android:background="@drawable/background_main">
 
@@ -18,7 +18,7 @@
         android:textSize="32dp"
         android:layout_margin="16dp"
         android:fontFamily="@font/oleoscript"
-        android:textColor="#FFF"
+        android:textColor="#FFFFFF"
 
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -164,11 +164,24 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
+        android:id="@+id/achivementsButton"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+
+        android:text="achievements"
+        android:backgroundTint="#C37136"
+
+        app:layout_constraintBottom_toTopOf="@id/restartButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
         android:id="@+id/restartButton"
         android:layout_width="240dp"
         android:layout_height="60dp"
 
         android:text="restart"
+        android:backgroundTint="#C37136"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
